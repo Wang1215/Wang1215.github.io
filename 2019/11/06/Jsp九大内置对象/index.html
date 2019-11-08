@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: hexo | Wang1215&#39;s blog</title>
+  <title>Jsp九大内置对象 | Wang1215&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一个刚入坑的小菜鸟">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Wang1215&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/tags/hexo/index.html">
+  <meta name="description" content="JSP九大内置对象详解JSP内置对象(9个内置对象): 1.PageContext  javax.servlet.jsp.PageContext    JSP的页面容器     2.request       javax.servlet.http.HttpServletrequest  获取用户的请求信息">
+<meta name="keywords" content="jsp">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jsp九大内置对象">
+<meta property="og:url" content="http://yoursite.com/2019/11/06/Jsp九大内置对象/index.html">
 <meta property="og:site_name" content="Wang1215&#39;s blog">
-<meta property="og:description" content="一个刚入坑的小菜鸟">
+<meta property="og:description" content="JSP九大内置对象详解JSP内置对象(9个内置对象): 1.PageContext  javax.servlet.jsp.PageContext    JSP的页面容器     2.request       javax.servlet.http.HttpServletrequest  获取用户的请求信息">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-11-08T07:13:42.906Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wang1215&#39;s blog">
-<meta name="twitter:description" content="一个刚入坑的小菜鸟">
+<meta name="twitter:title" content="Jsp九大内置对象">
+<meta name="twitter:description" content="JSP九大内置对象详解JSP内置对象(9个内置对象): 1.PageContext  javax.servlet.jsp.PageContext    JSP的页面容器     2.request       javax.servlet.http.HttpServletrequest  获取用户的请求信息">
   
     <link rel="alternative" href="/atom.xml" title="Wang1215&#39;s blog" type="application/atom+xml">
   
@@ -166,61 +168,258 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Jsp九大内置对象" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/14/博客的上传/" class="archive-article-date">
-  	<time datetime="2019-10-13T22:52:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/14/博客的上传/">博客的上传</a>
+    <h1 class="article-title" itemprop="name">
+      Jsp九大内置对象
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/11/06/Jsp九大内置对象/" class="archive-article-date">
+  	<time datetime="2019-11-05T21:49:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="JSP九大内置对象详解"><a href="#JSP九大内置对象详解" class="headerlink" title="JSP九大内置对象详解"></a><strong>JSP九大内置对象详解</strong></h2><h4 id="JSP内置对象-9个内置对象"><a href="#JSP内置对象-9个内置对象" class="headerlink" title="JSP内置对象(9个内置对象):"></a>JSP内置对象(9个内置对象):</h4><ul>
+<li><p>1.PageContext  javax.servlet.jsp.PageContext    JSP的页面容器   </p>
+</li>
+<li><p>2.request       javax.servlet.http.HttpServletrequest  获取用户的请求信息</p>
+<a id="more"></a>
+</li>
+<li><p>3.response     javax.servlet.http.HttpServletResponse 服务器向客户端的回应信息</p>
+</li>
+<li><p>4.session      javax.servlet.http.HttpSession    用来保存每一个用户的信息  </p>
+</li>
+<li><p>5.application  javax.servlet.ServletContext  表示所有用户的共享信息</p>
+</li>
+<li><p>6.config       javax.servlet.ServletConfig 服务器配置信息，可以取得初始化参数</p>
+</li>
+<li><p>7.out          javax.servlet.jsp.jspWriter  页面输出</p>
+</li>
+<li><p>8.page         java.lang.object</p>
+</li>
+<li><p>9.exception    java.lang.Throwable </p>
+</li>
+</ul>
+<p>四种属性范围:</p>
+<p>page(pageContext):只在一个页面中保存属性。                      跳转之后无效。<br>request:只在一次请求中有效，服务器跳转之后有效。                    客户端跳无效<br>session:再一次会话中有效。服务器跳转、客户端跳转都有效。    网页关闭重新打开无效<br>application:在整个服务器上保存，所有用户都可使用。            重启服务器后无效<br>注意：如果设置过多的application属性范围会影响服务器性能。<br>pageContext.PAGE_SCOPE<br>pageContext.REQUEST_SCOPE<br>pageContext.SESSION_SCOPE<br>pageContext.APPLICATION_SCOPE<br>pageContext.setAttribute(“name”, “liuyang”, pageContext.APPLICATION_SCOPE);</p>
+<ul>
+<li>Request常用的方法：</li>
+</ul>
+<p>getParameter(String strTextName) 获取表单提交的信息。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String strName＝request.getParameter(&quot;name&quot;);</span><br></pre></td></tr></table></figure>
+
+<p>getProtocol() 获取客户使用的协议。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String strProtocol=request.getProtocol();</span><br></pre></td></tr></table></figure>
+
+<p>getServletPath() 获取客户提交信息的页面。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String strServlet=request.getServletPath();</span><br></pre></td></tr></table></figure>
+
+<p>getMethod() 获取客户提交信息的方式，get|post。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String strHeader = request.getHeader(&quot;accept&quot;);</span><br></pre></td></tr></table></figure>
+
+<p>getRermoteAddr() 获取客户的IP地址。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String strIP = request.getRemoteAddr();</span><br></pre></td></tr></table></figure>
+
+<p>getRemoteHost() 获取客户机的名称。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String clientName = request.getRemoteHost();</span><br></pre></td></tr></table></figure>
+
+<p>getServerName() 获取服务器名称。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String serverName = request.getServerName();</span><br></pre></td></tr></table></figure>
+
+<p>getServerPort() 获取服务器的端口号。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int serverPort = request.getServerPort();</span><br></pre></td></tr></table></figure>
+
+<p>getParameterNames() 获取客户端提交的所有参数的名字。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Enumeration enum = request.getParameterNames();</span><br><span class="line">while(enum.hasMoreElements())&#123;</span><br><span class="line">    String s=(String)enum.nextElement();</span><br><span class="line">    out.println(s);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>getHeaderNames()     取出全部头信息。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">　　Enumeration enu = request.getHeaderNames();//取出全部头信息</span><br><span class="line">　　while(enu.hasMoreElements())&#123;</span><br><span class="line">　　String name = (String)enu.nextElement();</span><br><span class="line">　　String value = request.getHeader(name);</span><br><span class="line">　　%&gt;</span><br><span class="line">　　&lt;h1&gt;&lt;%=name %&gt;--&lt;%=value %&gt;&lt;/h1&gt;</span><br><span class="line">　　&lt;%    </span><br><span class="line">　　&#125;</span><br><span class="line">　　%&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="1、request对象"><a href="#1、request对象" class="headerlink" title="1、request对象"></a>1、request对象</h4><p>equest 对象是 javax.servlet.httpServletRequest类型的对象。 该对象代表了客户端的请求信息，主要用于接受通过HTTP协议传送到服务器的数据。（包括头信息、系统信息、请求方式以及请求参数等）。request对象的作用域为一次请求。</p>
+<h4 id="2、response对象"><a href="#2、response对象" class="headerlink" title="2、response对象"></a><strong><em>2、response对象</em></strong></h4><p>response 代表的是对客户端的响应，主要是将JSP容器处理过的对象传回到客户端。response对象也具有作用域，它只在JSP页面内有效。</p>
+<h4 id="3、session对象"><a href="#3、session对象" class="headerlink" title="3、session对象"></a><strong>3、session对象</strong></h4><p>session 对象是由服务器自动创建的与用户请求相关的对象。服务器为每个用户都生成一个session对象，用于保存该用户的信息，跟踪用户的操作状态。session对象内部使用Map类来保存数据，因此保存数据的格式为 “Key/value”。 session对象的value可以使复杂的对象类型，而不仅仅局限于字符串类型。</p>
+<h4 id="4、application对象"><a href="#4、application对象" class="headerlink" title="4、application对象"></a><strong>4、application对象</strong></h4><p>application 对象可将信息保存在服务器中，直到服务器关闭，否则application对象中保存的信息会在整个应用中都有效。与session对象相比，application对象生命周期更长，类似于系统的“全局变量”。</p>
+<h4 id="5、out-对象"><a href="#5、out-对象" class="headerlink" title="5、out 对象"></a><strong>5、out 对象</strong></h4><p>out 对象用于在Web浏览器内输出信息，并且管理应用服务器上的输出缓冲区。在使用 out 对象输出数据时，可以对数据缓冲区进行操作，及时清除缓冲区中的残余数据，为其他的输出让出缓冲空间。待数据输出完毕后，要及时关闭输出流。</p>
+<h4 id="6、pageContext-对象"><a href="#6、pageContext-对象" class="headerlink" title="6、pageContext 对象"></a><strong>6、pageContext 对象</strong></h4><p>pageContext 对象的作用是取得任何范围的参数，通过它可以获取 JSP页面的out、request、reponse、session、application 等对象。pageContext对象的创建和初始化都是由容器来完成的，在JSP页面中可以直接使用 pageContext对象。</p>
+<h4 id="7、config-对象"><a href="#7、config-对象" class="headerlink" title="7、config 对象"></a><strong>7、config 对象</strong></h4><p>config 对象的主要作用是取得服务器的配置信息。通过 pageConext对象的 getServletConfig() 方法可以获取一个config对象。当一个Servlet 初始化时，容器把某些信息通过 config对象传递给这个 Servlet。 开发者可以在web.xml 文件中为应用程序环境中的Servlet程序和JSP页面提供初始化参数。</p>
+<h4 id="8、page-对象"><a href="#8、page-对象" class="headerlink" title="8、page 对象"></a><strong>8、page 对象</strong></h4><p>page 对象代表JSP本身，只有在JSP页面内才是合法的。 page隐含对象本质上包含当前 Servlet接口引用的变量，类似于Java编程中的 this 指针。</p>
+<h4 id="9、exception-对象"><a href="#9、exception-对象" class="headerlink" title="9、exception 对象"></a><strong>9、exception 对象</strong></h4><p>exception 对象的作用是显示异常信息，只有在包含 isErrorPage=”true” 的页面中才可以被使用，在一般的JSP页面中使用该对象将无法编译JSP文件。excepation对象和Java的所有对象一样，都具有系统提供的继承结构。exception 对象几乎定义了所有异常情况。在Java程序中，可以使用try/catch关键字来处理异常情况； 如果在JSP页面中出现没有捕获到的异常，就会生成 exception 对象，并把 exception 对象传送到在page指令中设定的错误页面中，然后在错误页面中处理相应的 exception 对象。</p>
+<p>JSP有九个内置对象（又叫隐含对象），不需要预先声明就可以在脚本代码和表达式中随意使用</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃辣条哦<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/zf.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wx.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">jsp</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/06/Jsp九大内置对象/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/11/04/jsp页面组成/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">jsp页面组成</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#JSP九大内置对象详解"><span class="toc-number">1.</span> <span class="toc-text">JSP九大内置对象详解</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#JSP内置对象-9个内置对象"><span class="toc-number">1.0.1.</span> <span class="toc-text">JSP内置对象(9个内置对象):</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1、request对象"><span class="toc-number">1.0.2.</span> <span class="toc-text">1、request对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2、response对象"><span class="toc-number">1.0.3.</span> <span class="toc-text">2、response对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3、session对象"><span class="toc-number">1.0.4.</span> <span class="toc-text">3、session对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4、application对象"><span class="toc-number">1.0.5.</span> <span class="toc-text">4、application对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5、out-对象"><span class="toc-number">1.0.6.</span> <span class="toc-text">5、out 对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6、pageContext-对象"><span class="toc-number">1.0.7.</span> <span class="toc-text">6、pageContext 对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7、config-对象"><span class="toc-number">1.0.8.</span> <span class="toc-text">7、config 对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8、page-对象"><span class="toc-number">1.0.9.</span> <span class="toc-text">8、page 对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#9、exception-对象"><span class="toc-number">1.0.10.</span> <span class="toc-text">9、exception 对象</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
 
+  
+
+  
+
+
+   
 
           </div>
         </div>
@@ -244,9 +443,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
