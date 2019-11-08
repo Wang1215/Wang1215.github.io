@@ -6,22 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>JAVA面向对象总结 | Wang1215的博客</title>
+  <title>JAVA面向对象总结 | Wang1215&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="第二章  类和对象 1.面向对象概念： ​    面向对象的思想就是把一个项目，分成更小的项目，每一部分负责什么功能最后再由这些组成一个整体。">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JAVA面向对象总结">
 <meta property="og:url" content="http://yoursite.com/2019/10/19/JAVA面向对象总结/index.html">
-<meta property="og:site_name" content="Wang1215的博客">
+<meta property="og:site_name" content="Wang1215&#39;s blog">
 <meta property="og:description" content="第二章  类和对象 1.面向对象概念： ​    面向对象的思想就是把一个项目，分成更小的项目，每一部分负责什么功能最后再由这些组成一个整体。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-03T09:08:25.187Z">
+<meta property="og:updated_time" content="2019-11-08T06:28:43.257Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JAVA面向对象总结">
 <meta name="twitter:description" content="第二章  类和对象 1.面向对象概念： ​    面向对象的思想就是把一个项目，分成更小的项目，每一部分负责什么功能最后再由这些组成一个整体。">
   
-    <link rel="alternative" href="/atom.xml" title="Wang1215的博客" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Wang1215&#39;s blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -201,8 +201,12 @@
 <p>对象名.方法名(); 对象名.属性</p>
 </li>
 <li><p>4.构造方法：方法名和类名相同,没有返回值</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">	public 类名()&#123;&#125;//主要的做用是初始化操作</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public 类名()&#123;&#125;//主要的做用是初始化操作</span><br></pre></td></tr></table></figure>
+
+
 </li>
+</ul>
+<ul>
 <li><p>5.构造方法重载</p>
 <p>在同一个类中，方法名相同，参数个数，顺序，类型不相同的构造方法</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public class 类名&#123;</span><br><span class="line">	public 类名()&#123;&#125;</span><br><span class="line">	public 类名(String name,int age)&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -213,7 +217,7 @@
 </li>
 <li><p>7.static静态修饰符</p>
 <p>静态修饰符可以修饰属性，方法，代码块</p>
-<p>类名.属性      类名.方法名</p>
+<p>类名.属性              类名.方法名</p>
 </li>
 <li><p>8.java内存（栈和堆，static，方法区，gc（垃圾回收机制））</p>
 <h3 id="第三章-面向对象三大特征—封装"><a href="#第三章-面向对象三大特征—封装" class="headerlink" title="第三章  面向对象三大特征—封装"></a>第三章  面向对象三大特征—封装</h3></li>
@@ -286,7 +290,7 @@
 <li><p>4.接口的用法</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">实现接口的关键字  implements</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public interface 接口名&#123;</span><br><span class="line">  			//接口是纯抽象类</span><br><span class="line">  			//接口里面的方法都是抽象方法</span><br><span class="line">  			void setData();</span><br><span class="line">  		&#125;</span><br><span class="line">  		public class Play implements 接口名&#123;</span><br><span class="line">  			void setData()&#123;</span><br><span class="line">  			&#125;</span><br><span class="line"> 		&#125;</span><br><span class="line">  		public class Test &#123;</span><br><span class="line">  			public static void main(String[] args) &#123;</span><br><span class="line">  				Play play=new Play();</span><br><span class="line">  				play.setData();</span><br><span class="line">  			&#125;</span><br><span class="line">  	&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public interface 接口名&#123;</span><br><span class="line">  			//接口是纯抽象类</span><br><span class="line">  			//接口里面的方法都是抽象方法</span><br><span class="line">  			void setData();</span><br><span class="line">  		&#125;</span><br><span class="line">public class Play implements 接口名&#123;</span><br><span class="line">  			void setData()&#123;</span><br><span class="line">  			&#125;</span><br><span class="line"> 		&#125;</span><br><span class="line">public class Test &#123;</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">  			Play play=new Play();</span><br><span class="line">  			play.setData();</span><br><span class="line">  			&#125;</span><br><span class="line">  	&#125;</span><br></pre></td></tr></table></figure>
 
 
 
@@ -305,7 +309,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">用法</span><br><span class="line">Map map=new HasMap();</span><br><span class="line">map.put(key,value);//key不能重复</span><br><span class="line">map.get(key);//获取key对象的value</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>3.泛型</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;String&gt; list=new ArrayList&gt;&lt;String&gt;();</span><br><span class="line">Map&lt;String,String&gt; map=new HasMap&lt;String,String&gt;();</span><br><span class="line">ArrayList&lt;Map&lt;String,String&gt;&gt; list=new ArrayList&gt;&lt;Map&lt;String,String&gt;&gt;();</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;String&gt; list=new ArrayList&gt;&lt;String&gt;();</span><br><span class="line">Map&lt;String,String&gt; map=new HasMap&lt;String,String&gt;();</span><br><span class="line">ArrayList&lt;Map&lt;String,String&gt;&gt; list=new ArrayList&lt;&lt;Map&lt;String,String&gt;&gt;();</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
@@ -582,15 +586,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">eclipse</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">hello</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -602,15 +602,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">hello</a>
+                <a href="javascript:void(0)" class="js-tag color4">jps</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">eclipse</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">jps</a>
               </li>
             
             <div class="clearfix"></div>
