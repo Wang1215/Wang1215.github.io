@@ -6,23 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>在eclipse中修改jsp的编码为UTF-8 | Wang1215&#39;s blog</title>
+  <title>Request案例代码 | Wang1215&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、修改原因在使用eclipse学习jsp时，很多默认的编码都是iso-8859-1，而我们需要使用的是utf-8编码，我们第一个接触改变jsp编码的方式可能都是在需要修改的jsp中修改，如下： 将charset与pageEncoding的编码手动改写为UTF-8。">
-<meta name="keywords" content="eclipse,jps">
+  <meta name="description" content="request对象request对象封装了由客户端生成的HTTP请求的所有细节，主要包括HTTP头信息、系统信息、请求方式和请求参数等。通过request对象提供的相应方法可以处理客户端浏览器提交的HTTP请求中的各项参数。 request对象的常用方法：  String getParameter(String name)：根据页面表单组件名称获取页面提交数据。 String[] getParam">
+<meta name="keywords" content="jsp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在eclipse中修改jsp的编码为UTF-8">
-<meta property="og:url" content="http://yoursite.com/2019/11/03/在eclipse中修改jsp的编码为UTF-8/index.html">
+<meta property="og:title" content="Request案例代码">
+<meta property="og:url" content="http://yoursite.com/2019/11/08/Request案例代码/index.html">
 <meta property="og:site_name" content="Wang1215&#39;s blog">
-<meta property="og:description" content="一、修改原因在使用eclipse学习jsp时，很多默认的编码都是iso-8859-1，而我们需要使用的是utf-8编码，我们第一个接触改变jsp编码的方式可能都是在需要修改的jsp中修改，如下： 将charset与pageEncoding的编码手动改写为UTF-8。">
+<meta property="og:description" content="request对象request对象封装了由客户端生成的HTTP请求的所有细节，主要包括HTTP头信息、系统信息、请求方式和请求参数等。通过request对象提供的相应方法可以处理客户端浏览器提交的HTTP请求中的各项参数。 request对象的常用方法：  String getParameter(String name)：根据页面表单组件名称获取页面提交数据。 String[] getParam">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/images/eclipseu1.png">
-<meta property="og:image" content="http://yoursite.com/images/eclipseu2.png">
-<meta property="og:updated_time" content="2019-11-05T14:06:16.038Z">
+<meta property="og:updated_time" content="2019-11-08T07:04:30.379Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在eclipse中修改jsp的编码为UTF-8">
-<meta name="twitter:description" content="一、修改原因在使用eclipse学习jsp时，很多默认的编码都是iso-8859-1，而我们需要使用的是utf-8编码，我们第一个接触改变jsp编码的方式可能都是在需要修改的jsp中修改，如下： 将charset与pageEncoding的编码手动改写为UTF-8。">
-<meta name="twitter:image" content="http://yoursite.com/images/eclipseu1.png">
+<meta name="twitter:title" content="Request案例代码">
+<meta name="twitter:description" content="request对象request对象封装了由客户端生成的HTTP请求的所有细节，主要包括HTTP头信息、系统信息、请求方式和请求参数等。通过request对象提供的相应方法可以处理客户端浏览器提交的HTTP请求中的各项参数。 request对象的常用方法：  String getParameter(String name)：根据页面表单组件名称获取页面提交数据。 String[] getParam">
   
     <link rel="alternative" href="/atom.xml" title="Wang1215&#39;s blog" type="application/atom+xml">
   
@@ -171,39 +168,54 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-在eclipse中修改jsp的编码为UTF-8" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Request案例代码" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      在eclipse中修改jsp的编码为UTF-8
+      Request案例代码
     </h1>
   
 
         
-        <a href="/2019/11/03/在eclipse中修改jsp的编码为UTF-8/" class="archive-article-date">
-  	<time datetime="2019-11-02T21:35:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-02</time>
+        <a href="/2019/11/08/Request案例代码/" class="archive-article-date">
+  	<time datetime="2019-11-07T18:40:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="一、修改原因"><a href="#一、修改原因" class="headerlink" title="一、修改原因"></a>一、修改原因</h3><p>在使用eclipse学习jsp时，很多默认的编码都是iso-8859-1，而我们需要使用的是utf-8编码，我们第一个接触改变jsp编码的方式可能都是在需要修改的jsp中修改，如下：</p>
-<p>将charset与pageEncoding的编码手动改写为UTF-8。</p>
-<a id="more"></a>
+        <h2 id="request对象"><a href="#request对象" class="headerlink" title="request对象"></a>request对象</h2><p>request对象封装了由客户端生成的HTTP请求的所有细节，主要包括HTTP头信息、系统信息、请求方式和请求参数等。通过request对象提供的相应方法可以处理客户端浏览器提交的HTTP请求中的各项参数。</p>
+<p>request对象的常用方法：</p>
+<ul>
+<li>String getParameter(String name)：根据页面表单组件名称获取页面提交数据。</li>
+<li>String[] getParameterValues(String name)：获取一个页面表单组件对于多个值时的用户的请求数据。</li>
+<li>void setCharacterEncoding(String env)：指定每个请求的编码，在调用 request.getParameter() 方法之前进行设定，可以用于解决中文乱码问题。</li>
+<li>request.getRequestDispatcher(String path)：返回一个 javax.servlet.RequestDispatcher 对象，该对象的 forward 方法用于转发请求。</li>
+<li>void setAttribute(String name,Object object)：方法将数据保存到request范围内的变量中。</li>
+<li>Object getAttribute(String name)：获取request范围内的变量中的数据。</li>
+<li>void removeAttribute(String name)：删除request范围内的变量中的数据。</li>
+<li>Cookie[] getCookies()：获取到所有cookie对象的集合。</li>
+</ul>
+<h4 id="注册页面Demo-jsp"><a href="#注册页面Demo-jsp" class="headerlink" title="注册页面Demo.jsp"></a>注册页面Demo.jsp</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page language=&quot;java&quot; contentType=&quot;text/html; charset=UTF-8&quot;</span><br><span class="line">    pageEncoding=&quot;UTF-8&quot;%&gt;</span><br><span class="line">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;</span><br><span class="line">&lt;title&gt;Insert title here&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;form action=&quot;Text.jsp&quot; meshod=&quot;post&quot;&gt;</span><br><span class="line">		用户名：&lt;input type=&quot;text&quot; name=&quot;user&quot;&gt;&lt;br&gt;</span><br><span class="line">		密码：&lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;&lt;br&gt;</span><br><span class="line">		多选：&lt;br&gt;</span><br><span class="line">		&lt;input type=&quot;checkbox&quot; name=&quot;dx&quot; value=&quot;唱&quot;&gt;唱</span><br><span class="line">		&lt;input type=&quot;checkbox&quot; name=&quot;dx&quot; value=&quot;跳&quot;&gt;跳</span><br><span class="line">		&lt;input type=&quot;checkbox&quot; name=&quot;dx&quot; value=&quot;rap&quot;&gt;rap</span><br><span class="line">		&lt;input type=&quot;checkbox&quot; name=&quot;dx&quot; value=&quot;篮球&quot;&gt;篮球</span><br><span class="line">		&lt;br&gt;</span><br><span class="line">		&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;提交&quot;&gt;</span><br><span class="line">		&lt;input type=&quot;reset&quot; name=&quot;reset&quot; value=&quot;取消&quot;&gt;</span><br><span class="line">	&lt;/form&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/images/eclipseu1.png" alt></p>
-<p>但是随着使用jsp的增多，我们就会发现绝大多数jsp使用的都是UTF-8编码，而如果每次都手动修改的化就会比较麻烦。</p>
-<h3 id="二、修改步骤"><a href="#二、修改步骤" class="headerlink" title="二、修改步骤"></a>二、修改步骤</h3><p>下面就是将eclipse中jsp的文件改为默认UTF-8编码的步骤：</p>
-<p> 第一步、打开eclipse，在菜单栏里找到window –&gt; Preference</p>
-<p>第二步、打开web –&gt; JSP Files</p>
-<p>第三步、点击JSP Files–&gt; 修改Encoding选项为UTF-8</p>
-<p>打开的界面如下：</p>
-<p><img src="/images/eclipseu2.png" alt></p>
-<p>修改完成之后，jsp默认的编码格式就会变为UTF-8了，新建一个jsp的格式就会和上面的界面一样</p>
+<h4 id="注册提交页面Text-jsp"><a href="#注册提交页面Text-jsp" class="headerlink" title="注册提交页面Text.jsp"></a>注册提交页面Text.jsp</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page language=&quot;java&quot; contentType=&quot;text/html; charset=UTF-8&quot;</span><br><span class="line">    pageEncoding=&quot;UTF-8&quot;%&gt;</span><br><span class="line">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</span><br><span class="line">&lt;% </span><br><span class="line">request.setCharacterEncoding(&quot;UTF-8&quot;);</span><br><span class="line">String name=request.getParameter(&quot;user&quot;);</span><br><span class="line">String pwd=request.getParameter(&quot;password&quot;);</span><br><span class="line">String [] y=request.getParameterValues(&quot;dx&quot;);</span><br><span class="line">%&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;</span><br><span class="line">&lt;title&gt;Insert title here&lt;/title&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	用户名是：&lt;%=name %&gt;&lt;br&gt;</span><br><span class="line">	密码是：&lt;%=pwd %&gt;&lt;br&gt;</span><br><span class="line">	信息来源是：&lt;% for(int i=0;i&lt;y.length;i++)&#123;</span><br><span class="line">		out.println(y[i]);</span><br><span class="line">	&#125; %&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="在作用域中管理属性"><a href="#在作用域中管理属性" class="headerlink" title="在作用域中管理属性"></a>在作用域中管理属性</h4><p>在进行请求转发时，需要把一些数据传递到转发后的页面进行处理。这时，就需要使用request对象的setAttribute()方法将数据保存到request范围内的变量中。request对象的setAttribute()方法的语法格式如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">request.setAttribute(String name,Object object);</span><br></pre></td></tr></table></figure>
+
+<p>在将数据保存到request范围内的变量中后，可以通过request对象的getAttribute()方法获取该变量的值，具体的语法格式如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">request.getAttribute(String name)</span><br></pre></td></tr></table></figure>
+
+<h3 id="获取cookie"><a href="#获取cookie" class="headerlink" title="获取cookie"></a>获取cookie</h3><p>通过cookie的getCookies()方法即可获取到所有cookie对象的集合；通过cookie对象的getName()方法可以获取到指定名称的cookie；通过getValue()方法即可获取到cookie对象的值。另外将一个cookie对象发送到客户端使用了response对象的addCookie()方法。<br>写入cookie对象页面 index.jsp</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page language=&quot;java&quot; contentType=&quot;text/html; charset=UTF-8&quot;</span><br><span class="line">	pageEncoding=&quot;UTF-8&quot;%&gt;&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">&lt;title&gt;写入cookie对象&lt;/title&gt;</span><br><span class="line">&lt;meta name=&quot;author&quot; content=&quot;pan_junbiao的博客&quot;&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;%</span><br><span class="line">		//写入cookie对象	request.setCharacterEncoding(&quot;UTF-8&quot;);  //设置请求的编码	Cookie cookie = new Cookie(&quot;userCookie&quot;,&quot;pan_junbiao的博客&quot;);  //创建并实例化cookie对象	cookie.setMaxAge(60*60*24*30);  //设置cookie有效期为30天	response.addCookie(cookie);  //保存cookie对象</span><br><span class="line">	%&gt;</span><br><span class="line">	&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">		window.location.href = &quot;deal.jsp&quot;</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>读取cookie值页面 deal.jsp</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page language=&quot;java&quot; contentType=&quot;text/html; charset=UTF-8&quot;</span><br><span class="line">	pageEncoding=&quot;UTF-8&quot;%&gt;&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">&lt;title&gt;读取cookie值&lt;/title&gt;</span><br><span class="line">&lt;meta name=&quot;author&quot; content=&quot;pan_junbiao的博客&quot;&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;%</span><br><span class="line">		//读取cookie值	Cookie[] cookies = request.getCookies();  //从request中获取cookie对象的集合	String user = &quot;&quot;;	if(cookies != null)	&#123;		//遍历cookie对象集合		for(Cookie cookieItem : cookies)		&#123;			if(cookieItem.getName().equals(&quot;userCookie&quot;))			&#123;				user = cookieItem.getValue();  //读取cookie对象的的值			&#125;		&#125;	&#125;</span><br><span class="line">	%&gt;</span><br><span class="line">	用户信息：&lt;%=user%&gt;&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -248,11 +260,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">eclipse</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">jps</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">jsp</a>
         		</li>
       		
 		</ul>
@@ -308,7 +316,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/03/在eclipse中修改jsp的编码为UTF-8/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/08/Request案例代码/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -322,18 +330,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/11/04/jsp页面组成/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/11/09/Cookie对象常用方法/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          jsp页面组成
+          Cookie对象常用方法
         
       </div>
     </a>
   
   
-    <a href="/2019/11/02/Eclipse配置Tomcat及项目的部署/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Eclipse配置Tomcat及项目的部署</div>
+    <a href="/2019/11/06/Jsp九大内置对象/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Jsp九大内置对象</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -360,7 +368,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、修改原因"><span class="toc-number">1.</span> <span class="toc-text">一、修改原因</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、修改步骤"><span class="toc-number">2.</span> <span class="toc-text">二、修改步骤</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#request对象"><span class="toc-number">1.</span> <span class="toc-text">request对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#注册页面Demo-jsp"><span class="toc-number">1.0.1.</span> <span class="toc-text">注册页面Demo.jsp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#注册提交页面Text-jsp"><span class="toc-number">1.0.2.</span> <span class="toc-text">注册提交页面Text.jsp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#在作用域中管理属性"><span class="toc-number">1.0.3.</span> <span class="toc-text">在作用域中管理属性</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取cookie"><span class="toc-number">1.1.</span> <span class="toc-text">获取cookie</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>

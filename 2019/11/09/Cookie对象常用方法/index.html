@@ -6,23 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>在eclipse中修改jsp的编码为UTF-8 | Wang1215&#39;s blog</title>
+  <title>Cookie对象常用方法 | Wang1215&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、修改原因在使用eclipse学习jsp时，很多默认的编码都是iso-8859-1，而我们需要使用的是utf-8编码，我们第一个接触改变jsp编码的方式可能都是在需要修改的jsp中修改，如下： 将charset与pageEncoding的编码手动改写为UTF-8。">
-<meta name="keywords" content="eclipse,jps">
+  <meta name="description" content="JSP中创建使用Cookie一 语法创建Cookie对象1Cookie newCookie = new Cookie(String key,object value);  写入Cookie对象">
+<meta name="keywords" content="jsp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在eclipse中修改jsp的编码为UTF-8">
-<meta property="og:url" content="http://yoursite.com/2019/11/03/在eclipse中修改jsp的编码为UTF-8/index.html">
+<meta property="og:title" content="Cookie对象常用方法">
+<meta property="og:url" content="http://yoursite.com/2019/11/09/Cookie对象常用方法/index.html">
 <meta property="og:site_name" content="Wang1215&#39;s blog">
-<meta property="og:description" content="一、修改原因在使用eclipse学习jsp时，很多默认的编码都是iso-8859-1，而我们需要使用的是utf-8编码，我们第一个接触改变jsp编码的方式可能都是在需要修改的jsp中修改，如下： 将charset与pageEncoding的编码手动改写为UTF-8。">
+<meta property="og:description" content="JSP中创建使用Cookie一 语法创建Cookie对象1Cookie newCookie = new Cookie(String key,object value);  写入Cookie对象">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/images/eclipseu1.png">
-<meta property="og:image" content="http://yoursite.com/images/eclipseu2.png">
-<meta property="og:updated_time" content="2019-11-05T14:06:16.038Z">
+<meta property="og:updated_time" content="2019-11-08T07:05:00.579Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在eclipse中修改jsp的编码为UTF-8">
-<meta name="twitter:description" content="一、修改原因在使用eclipse学习jsp时，很多默认的编码都是iso-8859-1，而我们需要使用的是utf-8编码，我们第一个接触改变jsp编码的方式可能都是在需要修改的jsp中修改，如下： 将charset与pageEncoding的编码手动改写为UTF-8。">
-<meta name="twitter:image" content="http://yoursite.com/images/eclipseu1.png">
+<meta name="twitter:title" content="Cookie对象常用方法">
+<meta name="twitter:description" content="JSP中创建使用Cookie一 语法创建Cookie对象1Cookie newCookie = new Cookie(String key,object value);  写入Cookie对象">
   
     <link rel="alternative" href="/atom.xml" title="Wang1215&#39;s blog" type="application/atom+xml">
   
@@ -171,39 +168,73 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-在eclipse中修改jsp的编码为UTF-8" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Cookie对象常用方法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      在eclipse中修改jsp的编码为UTF-8
+      Cookie对象常用方法
     </h1>
   
 
         
-        <a href="/2019/11/03/在eclipse中修改jsp的编码为UTF-8/" class="archive-article-date">
-  	<time datetime="2019-11-02T21:35:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-02</time>
+        <a href="/2019/11/09/Cookie对象常用方法/" class="archive-article-date">
+  	<time datetime="2019-11-09T10:58:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="一、修改原因"><a href="#一、修改原因" class="headerlink" title="一、修改原因"></a>一、修改原因</h3><p>在使用eclipse学习jsp时，很多默认的编码都是iso-8859-1，而我们需要使用的是utf-8编码，我们第一个接触改变jsp编码的方式可能都是在需要修改的jsp中修改，如下：</p>
-<p>将charset与pageEncoding的编码手动改写为UTF-8。</p>
-<a id="more"></a>
+        <h4 id="JSP中创建使用Cookie"><a href="#JSP中创建使用Cookie" class="headerlink" title="JSP中创建使用Cookie"></a>JSP中创建使用Cookie</h4><h4 id="一-语法"><a href="#一-语法" class="headerlink" title="一 语法"></a>一 语法</h4><h2 id="创建Cookie对象"><a href="#创建Cookie对象" class="headerlink" title="创建Cookie对象"></a>创建Cookie对象</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Cookie newCookie = new Cookie(String key,object value);</span><br></pre></td></tr></table></figure>
 
-<p><img src="/images/eclipseu1.png" alt></p>
-<p>但是随着使用jsp的增多，我们就会发现绝大多数jsp使用的都是UTF-8编码，而如果每次都手动修改的化就会比较麻烦。</p>
-<h3 id="二、修改步骤"><a href="#二、修改步骤" class="headerlink" title="二、修改步骤"></a>二、修改步骤</h3><p>下面就是将eclipse中jsp的文件改为默认UTF-8编码的步骤：</p>
-<p> 第一步、打开eclipse，在菜单栏里找到window –&gt; Preference</p>
-<p>第二步、打开web –&gt; JSP Files</p>
-<p>第三步、点击JSP Files–&gt; 修改Encoding选项为UTF-8</p>
-<p>打开的界面如下：</p>
-<p><img src="/images/eclipseu2.png" alt></p>
-<p>修改完成之后，jsp默认的编码格式就会变为UTF-8了，新建一个jsp的格式就会和上面的界面一样</p>
+<h2 id="写入Cookie对象"><a href="#写入Cookie对象" class="headerlink" title="写入Cookie对象"></a>写入Cookie对象</h2><a id="more"></a>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">responce.addCookie(newCookie);</span><br></pre></td></tr></table></figure>
+
+<h2 id="读取Cookie对象"><a href="#读取Cookie对象" class="headerlink" title="读取Cookie对象"></a>读取Cookie对象</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Cookie[]cookies = request.getCookie();</span><br></pre></td></tr></table></figure>
+
+<h4 id="二-常用方法"><a href="#二-常用方法" class="headerlink" title="二 常用方法"></a>二 常用方法</h4><table>
+<thead>
+<tr>
+<th>方法名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>void setMaxAge(int expiry)</td>
+<td>设置cookie的有效期,以秒为单位</td>
+</tr>
+<tr>
+<td>void setValue(String value)</td>
+<td>在cookie创建后,对cookie进行赋值</td>
+</tr>
+<tr>
+<td>String getName()</td>
+<td>获取cookie的名称</td>
+</tr>
+<tr>
+<td>String getValue()</td>
+<td>获取cookie的值</td>
+</tr>
+<tr>
+<td>int getMaxAge()</td>
+<td>获取cookie的有效时间，以秒为单位</td>
+</tr>
+</tbody></table>
+<p>自动登录实例</p>
+<p>cookie过期时间</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">       //在javaweb规范中使用Cookie类代表Cookie</span><br><span class="line">       //获取cookie</span><br><span class="line">       Cookie[] cookies = request.getCookies();</span><br><span class="line">       if(cookies != null &amp;&amp; cookies.length &gt; 0)&#123;</span><br><span class="line">           for(Cookie cookie : cookies)&#123;</span><br><span class="line">               out.println(cookie.getName()+&quot; : &quot;+cookie.getValue());</span><br><span class="line">               out.println(&quot;&lt;br&gt;&quot;);</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;else&#123;</span><br><span class="line">           out.println(&quot;没有一个Cookie，正在创建并返回...&quot;);</span><br><span class="line">           //1.创建一个Cookie对象</span><br><span class="line">           Cookie cookie =new Cookie(&quot;name&quot;,&quot;Test&quot;);</span><br><span class="line"></span><br><span class="line">           //2.setMaxAge：设置Cookie的最大时效，以秒为单位，若为0，表示立即删除该Cookie，为负数，表示不存储，为正数，表示存储时间</span><br><span class="line">           cookie.setMaxAge(30);</span><br><span class="line"></span><br><span class="line">           //调用response的一个方法把Cookie传给客户端</span><br><span class="line">           response.addCookie(cookie);</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   %&gt;</span><br></pre></td></tr></table></figure>
+
+<p>自动登录</p>
+<p>登录login。jsp</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">    &lt;form action=&quot;index.jsp&quot; method=&quot;post&quot;&gt; </span><br><span class="line">        name:&lt;input type=&quot;text&quot; name=&quot;name&quot;/&gt;</span><br><span class="line">        &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;/&gt;</span><br><span class="line">    &lt;/form&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+
+<p>index.jsp显示登录信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 自动登录 --&gt;</span><br><span class="line">        &lt;!-- 此服务端 --&gt;</span><br><span class="line">    &lt;%</span><br><span class="line">        //若可以获取到请求参数name，则打印出欢迎信息，把登录信息存储到Cookie中，并设置Cookie的最大时效为30S</span><br><span class="line">        String name = request.getParameter(&quot;name&quot;);</span><br><span class="line">        //输入账号提交表单，获取到name字段，创建Cookie并发送到客户端中</span><br><span class="line">        if(name != null &amp;&amp; !name.trim().equals(&quot;&quot;))&#123;</span><br><span class="line">            //创建一个Cookie，name为login.jsp页面传进来的账号</span><br><span class="line">            Cookie cookie = new Cookie(&quot;name&quot;,name);</span><br><span class="line">            cookie.setMaxAge(30);</span><br><span class="line">            response.addCookie(cookie);</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">        //没有输入账号，自动登录，账号从Cookie中获取到</span><br><span class="line">            //从Cookieh中获取用户信息，若存在则打印欢迎信息</span><br><span class="line">            Cookie[] cookies = request.getCookies();</span><br><span class="line">            if(cookies != null &amp;&amp; cookies.length &gt; 0)&#123;</span><br><span class="line">                for(Cookie cookie : cookies)&#123;</span><br><span class="line">                    String cookieName = cookie.getName();</span><br><span class="line">                    if(&quot;name&quot;.equals(cookieName))&#123;</span><br><span class="line">                        String val = cookie.getValue();</span><br><span class="line">                        name = val;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if(name != null &amp;&amp; !name.trim().equals(&quot;&quot;))&#123;</span><br><span class="line">            //显示欢迎信息</span><br><span class="line">            out.println(&quot;Hello：&quot;+name);</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            out.println(&quot;Hello&quot;);</span><br><span class="line">            //既没有表单提交，又没有Cookie，则重定向到index.jsp</span><br><span class="line">            response.sendRedirect(&quot;login.jsp&quot;);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    %&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -248,11 +279,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">eclipse</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">jps</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">jsp</a>
         		</li>
       		
 		</ul>
@@ -308,7 +335,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/03/在eclipse中修改jsp的编码为UTF-8/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/09/Cookie对象常用方法/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -322,18 +349,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/11/04/jsp页面组成/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          jsp页面组成
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/11/02/Eclipse配置Tomcat及项目的部署/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Eclipse配置Tomcat及项目的部署</div>
+    <a href="/2019/11/08/Request案例代码/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Request案例代码</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -360,7 +378,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、修改原因"><span class="toc-number">1.</span> <span class="toc-text">一、修改原因</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、修改步骤"><span class="toc-number">2.</span> <span class="toc-text">二、修改步骤</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#JSP中创建使用Cookie"><span class="toc-number">1.</span> <span class="toc-text">JSP中创建使用Cookie</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#一-语法"><span class="toc-number">2.</span> <span class="toc-text">一 语法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建Cookie对象"><span class="toc-number"></span> <span class="toc-text">创建Cookie对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#写入Cookie对象"><span class="toc-number"></span> <span class="toc-text">写入Cookie对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#读取Cookie对象"><span class="toc-number"></span> <span class="toc-text">读取Cookie对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#二-常用方法"><span class="toc-number">1.</span> <span class="toc-text">二 常用方法</span></a></li></ol>
                     </div>
                 </span>
             </div>
